@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+#goRight {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    width: 5%;
+}
+
+#goRight:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+#goLeft {
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    width: 5%;
+}
+
+#goLeft:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+#goForward {
+  position: absolute;
+    left: 115px;
+    top: 100px;
+    width: 5%;
+}
+
+#goForward:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+#goBackword {
+  position: absolute;
+    left: 115px;
+    top: 200px;
+    width: 5%;
+}
+
+#goBackword:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+#Stop {
+  position: absolute;
+    left: 115px;
+    top: 150px;
+    width: 5%;
+}
+
+#Stop:hover {
+  background-color: Red;
+  color: white;
+}
+
+</style>
+
+</head>
+
+
+<body>
+<title> Control Panel </title>
+
+<button id="goRight" onClick="movement(this.id)">
+            Right
+        </button>
+
+        <button id="goLeft" onClick="movement(this.id)">
+            Left
+        </button>
+
+        <button id="Stop" onclick="stopMove()">
+            Stop
+        </button>
+
+        <button id="goForward" onClick="movement(this.id)">
+            Forward
+        </button>
+
+        <button id="goBackword" onClick="movement(this.id)">
+            Backword
+        </button>
+
+        <p id = "text" style =
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+
+        <script>
+
+            var AppearText = document.getElementById("text");
+            AppearText.innerHTML = "Click on button to move the robot";
+
+            function movement(clicked) {
+                AppearText.innerHTML = clicked;
+            }
+
+            function stopMove() {
+              AppearText.innerHTML = "Click on button to move the robot";
+
+}
+
+        </script>
+
+        </body>
+
+        </html>
